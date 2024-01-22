@@ -1,0 +1,54 @@
+# Secret Santa Web Application
+
+## Description
+
+This web application facilitates the management of Secret Santa groups. It allows users to create groups, add members, and perform administrative functions. The application provides a user-friendly interface for group randomization, member addition, and error handling.
+
+## Features
+
+- **Create Groups**: Users can create new Secret Santa groups with unique identifiers.
+- **Add Members**: Functionality to add members to a group.
+- **Admin Panel**: Special administrative access for additional functionalities.
+- **Randomize Pairings**: Randomize Secret Santa pairings within groups.
+- **Error Messaging**: User-friendly error messages for guidance.
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repository-url.git
+    ```
+
+Navigate to the project directory:
+
+  ```bash
+  cd secret-santa-app
+  ```
+
+Install necessary dependencies:
+```bash
+  npm install
+  ```
+
+Start the application:
+```bash
+  npm start
+  ```
+
+The application should be running on 'http:localhost:3000'
+
+## Usage
+- **Creating a Group**: Enter a name in the 'Create Group' field and click 'Create'
+- **Joining a Group**: Enter the group code in the 'Sign Into Group' field to join
+- **Admin Functions**: Admins can use a special code to access functions like randomization and group deletion
+
+
+## Contributing
+Contributions are **greatly appreciated**
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'I added some amazing feature'`)
+4. Commit your Changes (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
