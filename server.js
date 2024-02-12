@@ -22,6 +22,7 @@ app.post('/createGroup', async (req, res) => {
 // POST endpoint to add a new member to a group
 app.post('/add', async (req, res) => {
     const response = await db.add(req.body.groupCode, req.body.name);
+    console.log('here')
     res.send(response);                     // Send the response from the database operation.
 });
 
@@ -35,6 +36,16 @@ app.post('/adminsignin', async (req, res) => {
 app.get('/random/:code', async (req, res) => {
     db.randomize(req.params.code);
     return res.send('true');                // Always returns 'true'.
+});
+
+app.get('/getallpairs/:groupcode', async (req, res) => {
+    const myPairs = await db.getAllPairs(req.params.groupcode);
+    res.send(myPairs);                // Always returns 'true'.
+});
+
+app.get('/getpairs/:code/:groupcode', async (req, res) => {
+    const myPairs = await db.getpairs(req.params.code, req.params.groupcode);
+    res.send(myPairs);                // Always returns 'true'.
 });
 
 // GET endpoint for user sign-in using a group code
